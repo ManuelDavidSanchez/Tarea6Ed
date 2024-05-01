@@ -1,8 +1,13 @@
 
 public class AplicacionDescuentoCarrito {
-
+    
+    //Variables Estaticas para aplicar descuento.
+    
     public static final double DESCUENTO_2 = 0.95;
     public static final double DESCUENTO_1 = 0.8;
+    
+    
+   //Condicion para aplicar descuento segun precio y numero de productos.
     
     public void aplicarDescuento(double precioProducto, int numProductos) {
    
@@ -15,7 +20,9 @@ public class AplicacionDescuentoCarrito {
             }
         }
     }
-
+    
+    //Metodo que nos indicara el total a pagar aplicado en la condicion aplicarDescuento.
+    
     private void totalPagar(double precioProducto, double descuentoAplicado) {
         double total;
         total = precioProducto * (descuentoAplicado);
